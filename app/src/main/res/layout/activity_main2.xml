@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#201C1C">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="463dp"
+        android:layout_height="138dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_semibold_italic"
+        android:text="Home page"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:id="@+id/Welcoming"
+        android:layout_width="159dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/archivo_semibold_italic"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284"
+        tools:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/Sportchoose"
+        android:layout_width="373dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="84dp"
+        android:onClick="sportchoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/choose_a_sport" />
+
+    <ImageButton
+        android:id="@+id/Sportmanage"
+        android:layout_width="374dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        android:onClick="choosemanage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788"
+        app:srcCompat="@drawable/rectangle_32" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="266dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Sportmanage"
+        app:layout_constraintEnd_toEndOf="@+id/Sportmanage"
+        app:layout_constraintStart_toStartOf="@+id/Sportmanage"
+        app:layout_constraintTop_toTopOf="@+id/Sportmanage"
+        app:srcCompat="@drawable/manage_your_event" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
